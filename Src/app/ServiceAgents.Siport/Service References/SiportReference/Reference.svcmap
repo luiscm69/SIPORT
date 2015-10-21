@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f644608b-8a19-4e0e-ac87-cefd92c2f835" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50010/Siport" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Siport10.xsd" MetadataType="Schema" ID="1c148d39-e236-48d2-acad-56c9830d88be" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd16" />
+    <MetadataFile FileName="Siport3.xsd" MetadataType="Schema" ID="6d53d29f-96c4-4969-9526-0064e37740dc" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd3" />
+    <MetadataFile FileName="Siport6.xsd" MetadataType="Schema" ID="0be8d2ca-1599-49b3-a6ba-c852e351fd46" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd7" />
+    <MetadataFile FileName="Siport7.xsd" MetadataType="Schema" ID="73226822-9836-4ebd-982f-ce086d7c57b0" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd11" />
+    <MetadataFile FileName="SiportBackendService.wsdl" MetadataType="Wsdl" ID="c1b661d7-f415-47ab-90f0-1d35bd6fde3b" SourceId="1" SourceUrl="http://localhost:50010/Siport?wsdl" />
+    <MetadataFile FileName="Siport9.xsd" MetadataType="Schema" ID="1bb8531d-19eb-448e-9fce-20154afda526" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd15" />
+    <MetadataFile FileName="Siport8.xsd" MetadataType="Schema" ID="3c19f852-62b6-4710-87a2-cef6829cf62d" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd13" />
+    <MetadataFile FileName="Siport1.xsd" MetadataType="Schema" ID="0f28f935-dd7e-430b-b816-fd9b7bd4c4b3" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd0" />
+    <MetadataFile FileName="Siport.xsd" MetadataType="Schema" ID="0b7aae4f-1c17-41f9-872a-b67e47f9e848" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd4" />
+    <MetadataFile FileName="Siport61.xsd" MetadataType="Schema" ID="b607264e-45fd-4099-95b0-70d65872db00" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd8" />
+    <MetadataFile FileName="Siport.disco" MetadataType="Disco" ID="7675574d-871f-4054-909d-ffb690e5a6bd" SourceId="1" SourceUrl="http://localhost:50010/Siport?disco" />
+    <MetadataFile FileName="Siport71.xsd" MetadataType="Schema" ID="abeca7a9-9c4f-41c2-a8f3-675c9474abf1" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd10" />
+    <MetadataFile FileName="Siport5.xsd" MetadataType="Schema" ID="5a04cbd3-5dea-4457-a49d-e39c5a35697b" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd1" />
+    <MetadataFile FileName="Siport4.xsd" MetadataType="Schema" ID="1b3f3c83-1bcf-41f8-8ae9-3ef87e00b1b3" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd5" />
+    <MetadataFile FileName="Siport62.xsd" MetadataType="Schema" ID="c498d848-99b5-4bf7-9bc6-7d5c36e276b8" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd9" />
+    <MetadataFile FileName="Siport81.xsd" MetadataType="Schema" ID="e0d13526-fd28-472c-af80-1349fb3a2353" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd12" />
+    <MetadataFile FileName="Siport91.xsd" MetadataType="Schema" ID="a42da35e-4d9e-4617-b7f2-c8c06db75f11" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd14" />
+    <MetadataFile FileName="Siport2.xsd" MetadataType="Schema" ID="0aaeeb20-43d2-4788-bbce-64340659a4b4" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd2" />
+    <MetadataFile FileName="Siport63.xsd" MetadataType="Schema" ID="05f563d7-52ba-4a43-a721-46f82f73902f" SourceId="1" SourceUrl="http://localhost:50010/Siport?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

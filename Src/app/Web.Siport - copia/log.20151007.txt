@@ -1,0 +1,232 @@
+ERROR - 2015-10-07 16:33:08,702 - Anonimo [::1] - Se ha producido un error
+System.ServiceModel.FaultException: Se ha producido un error
+
+Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en ServiceAgents.Siport.SiportReference.IBackendService.ExecuteQuery(QueryParameter parameter)
+   en ServiceAgents.Siport.SiportReference.BackendServiceClient.ExecuteQuery(QueryParameter parameter) en d:\SIPORT\Src\app\ServiceAgents.Siport\Service References\SiportReference\Reference.cs:línea 70
+   en ServiceAgents.Siport.SiportBackendClient.ExecuteQuery(QueryParameter parameter) en d:\SIPORT\Src\app\ServiceAgents.Siport\SiportBackendClient.cs:línea 34
+   en ServiceAgents.Common.Extensions.Execute(QueryParameter parameter) en d:\SIPORT\Src\common\ServiceAgents.Common\Extensions.cs:línea 27
+   en Web.Common.AuthenticationServices.UpdatePerfilService.Update(String codigousuario, Nullable`1 idperfil) en d:\SIPORT\Src\common\Web.Common\AuthenticationServices\UpdatePerfilService.cs:línea 24
+   en Web.Common.HttpApplications.ActionFilters.PerfilLoadAttribute.OnActionExecuting(ActionExecutingContext filterContext) en d:\SIPORT\Src\common\Web.Common\HttpApplications\ActionFilters\PerfilLoadAttribute.cs:línea 20
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeActionMethodFilterAsynchronously(IActionFilter filter, ActionExecutingContext preContext, Func`1 nextInChain)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeActionMethodFilterAsynchronously(IActionFilter filter, ActionExecutingContext preContext, Func`1 nextInChain)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__31(AsyncCallback asyncCallback, Object asyncState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.BeginInvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters, AsyncCallback callback, Object state)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.BeginInvokeAction(ControllerContext controllerContext, String actionName, AsyncCallback callback, Object state)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   en System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   en System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   en System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   en System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  - 2015-10-07 17:47:54,864 -  - 
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ERROR - 2015-10-07 18:13:20,409 - Anonimo [::1] - No se encuentra la vista parcial '_ListaOrdenServicioDestino' o no hay un motor de búsqueda que admita las ubicaciones de búsqueda. Se buscó en las siguientes ubicaciones: 
+~/Views/OrdenServicio/_ListaOrdenServicioDestino.aspx
+~/Views/OrdenServicio/_ListaOrdenServicioDestino.ascx
+~/Views/Shared/_ListaOrdenServicioDestino.aspx
+~/Views/Shared/_ListaOrdenServicioDestino.ascx
+~/Views/OrdenServicio/_ListaOrdenServicioDestino.cshtml
+~/Views/OrdenServicio/_ListaOrdenServicioDestino.vbhtml
+~/Views/Shared/_ListaOrdenServicioDestino.cshtml
+~/Views/Shared/_ListaOrdenServicioDestino.vbhtml
+System.InvalidOperationException: No se encuentra la vista parcial '_ListaOrdenServicioDestino' o no hay un motor de búsqueda que admita las ubicaciones de búsqueda. Se buscó en las siguientes ubicaciones: 
+~/Views/OrdenServicio/_ListaOrdenServicioDestino.aspx
+~/Views/OrdenServicio/_ListaOrdenServicioDestino.ascx
+~/Views/Shared/_ListaOrdenServicioDestino.aspx
+~/Views/Shared/_ListaOrdenServicioDestino.ascx
+~/Views/OrdenServicio/_ListaOrdenServicioDestino.cshtml
+~/Views/OrdenServicio/_ListaOrdenServicioDestino.vbhtml
+~/Views/Shared/_ListaOrdenServicioDestino.cshtml
+~/Views/Shared/_ListaOrdenServicioDestino.vbhtml
+   en System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   en System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   en System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   en System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   en ASP._Page_Views_OrdenServicio_Insertar_cshtml.Execute() en d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\Insertar.cshtml:línea 28
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   en System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   en System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   en System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  - 2015-10-07 19:18:35,750 -  - 
+
+_shutDownMessage=Recompilation limit of 15 reached
+HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.Compilation.DiskBuildResultCache.ShutdownCallBack(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-07 21:49:44,061 -  - 
+
+_shutDownMessage=Recompilation limit of 15 reached
+HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.Compilation.DiskBuildResultCache.ShutdownCallBack(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-07 22:06:44,296 -  - 
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-07 22:08:15,664 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-07 22:10:31,297 -  - 
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()

@@ -1,0 +1,32 @@
+﻿@using Web.Siport.Models.OrdenServicio;
+@model  DetalleInsertarEditarOrdSrvModel
+
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section head {
+
+    <script src="@Url.Content("~/Scripts/trirand/i18n/grid.locale-sp.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/trirand/jquery.jqGrid.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jsview/ordenservicio.editar.js")" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jqgrid/ui.jqgrid-bootstrap.css")" />
+
+}
+
+@Html.HiddenFor(model => model.IdOrdenServicio)
+<div class="col-lg-12">
+    <div class="well well-sm">
+        @using (Html.BeginForm("Insertar", "OrdenServicio", FormMethod.Post, new { id = "formMain", @class = "form-horizontal" }))
+        {
+            <fieldset>
+                <legend class="text-left header">Registrar Orden de Servicio</legend>
+                @Html.Partial("_OrdenServicioDatos")
+            </fieldset>
+        }
+    </div>
+</div>
+
+

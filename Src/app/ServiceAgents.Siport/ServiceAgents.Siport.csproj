@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B31B011-508D-4C0F-88E8-285067D68CDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceAgents.Siport</RootNamespace>
+    <AssemblyName>ServiceAgents.Siport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SiportReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SiportBackendClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\CommandContracts.Common\CommandContracts.Common.csproj">
+      <Project>{F36173D9-9783-472A-B943-4D306BA3CD9D}</Project>
+      <Name>CommandContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\QueryContracts.Common\QueryContracts.Common.csproj">
+      <Project>{84360AC8-C346-43DA-A960-724766203A1C}</Project>
+      <Name>QueryContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\ServiceAgents.Common\ServiceAgents.Common.csproj">
+      <Project>{7735551a-dcf6-4b90-9a5c-cd20705fb393}</Project>
+      <Name>ServiceAgents.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandContracts.Siport\CommandContracts.Siport.csproj">
+      <Project>{aa3faf8a-b78c-48c5-ac97-738be2de84e6}</Project>
+      <Name>CommandContracts.Siport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryContracts.Siport\QueryContracts.Siport.csproj">
+      <Project>{fece0078-dacf-424a-9fe6-7d9780621587}</Project>
+      <Name>QueryContracts.Siport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\CommandContracts.Common.CommandResult.datasource" />
+    <None Include="Properties\DataSources\QueryContracts.Common.QueryResult.datasource" />
+    <None Include="Service References\SiportReference\Siport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport61.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport62.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport63.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport71.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport81.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\Siport91.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiportReference\SiportBackendService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SiportReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SiportReference\Siport.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SiportReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SiportReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SiportReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

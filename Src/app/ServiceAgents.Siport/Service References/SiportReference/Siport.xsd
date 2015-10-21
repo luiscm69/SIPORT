@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommandContracts.Siport.OrdenServicio" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommandContracts.Siport.OrdenServicio" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50010/Siport?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
+  <xs:complexType name="DetalleInsertarEditarOrdSrvCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q1:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CodigoOrdServicio" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Comentario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IdClientes" type="xs:double" />
+          <xs:element minOccurs="0" name="IdOrdenServicio" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="ListaDestinosCommand" nillable="true" type="tns:ArrayOfOrdenServicioDestinoCommand" />
+          <xs:element minOccurs="0" name="LogFecha" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LogUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NombreRazonSocial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioCreacion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DetalleInsertarEditarOrdSrvCommand" nillable="true" type="tns:DetalleInsertarEditarOrdSrvCommand" />
+  <xs:complexType name="ArrayOfOrdenServicioDestinoCommand">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrdenServicioDestinoCommand" nillable="true" type="tns:OrdenServicioDestinoCommand" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrdenServicioDestinoCommand" nillable="true" type="tns:ArrayOfOrdenServicioDestinoCommand" />
+  <xs:complexType name="OrdenServicioDestinoCommand">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoUbigeo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesHorarioEntrega" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescripcionUbigeo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaEstEntrega" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRealDespacho" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdHorarioEntrega" type="xs:double" />
+      <xs:element minOccurs="0" name="IdOrdenServicioDestino" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="LogFecha" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LogUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Referencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioCreacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrdenServicioDestinoCommand" nillable="true" type="tns:OrdenServicioDestinoCommand" />
+</xs:schema>

@@ -1,0 +1,98 @@
+﻿@model Web.Siport.Models.HojaRuta.PlanificacionRutaCabModel
+
+@Html.HiddenFor(model => model.IdPlanHojaDeRutaCab)
+@Html.HiddenFor(model => model.IdGuid)
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="divbusqueda" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Entradas</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                @Html.LabelFor(model => model.FechaOrdenServicioFiltro, new { @class = "control-label" })
+                                <div class="input-group">
+                                    @Html.TextBoxFor(model => model.FechaOrdenServicioFiltro, new { @class = "form-control", @type = "date" })
+                                    <span class="input-group-btn">
+                                        <button id="btnBuscarOrdSrvDisponibles" class="btn btn-default" type="button" style="min-width:1px!important" title="Buscar Ordenes de Servicio">
+                                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <table id="listaordenserviciogrid" data-urldata='@Url.Action("JsonListarOrdenServicioDisponible", "HojaRuta")'></table>
+                                <div id="pagelistaordenserviciogrid"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <label class="control-label">Vehiculos Disponible</label>
+                                @Html.DropDownListFor(model => model.IdVehiculoDisponible, Model.SelectListVehiculosDisponibles, "[Seleccionar Vehiculo]", new { @class = "form-control"})
+                            </div>
+                        </div>
+                        @*<div class="form-group">
+                            <div class="col-lg-12">
+                                <table id="listavehiculos" data-jsonurl='@Url.Action("JsonListarVehiculos", "HojaRuta")'></table>
+                                <div id="pagelistavehiculos"></div>
+                            </div>
+                        </div>*@
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <button id="btnagregardestino" type="button" class="btn btn-primary btn-xs pull-right" data-urldata='@Url.Action("PlanificarRuta", "HojaRuta")'>
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Planificar Ruta
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divmap" class="col-lg-7 col-md-7 col-sm-12 col-xs-12" style="height: 400px;">
+                <div id="map" class="panel col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:lightgray; height: 100%;"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="divbusqueda" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Rutas Planificadas</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <table id="listarutaplanificada" data-jsonurl='@Url.Action("JsonRutasPlanificadas", "HojaRuta", new { pGuid = Model.IdGuid})'></table>
+                                <div id="pagelistarutaplanificada"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                @Html.LabelFor(model => model.CodigoPlanificacion, new { @class = "control-label" })
+                                @Html.TextBoxFor(model => model.CodigoPlanificacion, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                @Html.LabelFor(model => model.ComentarioPlanificacion, new { @class = "control-label" })
+                                @Html.TextBoxFor(model => model.ComentarioPlanificacion, new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <button id="btngrabarutaplanificada" type="submit" class="btn btn-primary btn-sm pull-right">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Grabar
+                                </button>
+
+                                <button id="btncancelarutaplanificada" type="button" class="btn btn-default btn-sm pull-right">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Cancelar
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>

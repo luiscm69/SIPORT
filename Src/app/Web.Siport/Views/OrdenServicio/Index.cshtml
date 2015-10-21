@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Index";
+
+}
+@section scripts {
+    <script src="@Url.Content("~/Scripts/jsview/ordenservicio.index.js")" type="text/javascript"></script>
+}  
+
+<div class="col-lg-12">
+    <div class="well well-sm">
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "formmain", @class = "form-horizontal" }))
+        {
+            <fieldset>
+                <legend class="text-left header">Ordenes de Servicio</legend>
+
+                <div class="container">
+                    <div class="pull-right">
+                        <button id="btncrearordenservicio" type="button" class="btn btn-default btn-xs" data-newurl='@Url.Action("Insertar", "OrdenServicio")'>
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Agregar
+                        </button>
+                        <button id="btnplanificarruta" type="button" class="btn btn-default btn-xs" data-pordserv='@Url.Action("IngresarPlanificacionRuta", "HojaRuta")'>
+                            <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Planificar Ruta
+                        </button>
+                    </div>
+                </div>
+
+                <table id="listaordenserviciogrid" data-jsonurl='@Url.Action("JsonListarOrdenesServicio")' data-editurl='@Url.Action("Editar", "ordenservicio")'></table>
+                <div id="pagelistaordenserviciogrid"></div>
+            </fieldset>
+        }
+
+    </div>
+</div>

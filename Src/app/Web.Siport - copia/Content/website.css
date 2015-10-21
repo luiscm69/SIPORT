@@ -1,0 +1,13 @@
+﻿body 
+{
+}
+
+.header 
+{
+    background-color: #F5F5F5;
+    color: #394557;
+    height: 32px;
+    font-size: 15px;
+    padding: 1px;
+    font-weight:bold;
+}

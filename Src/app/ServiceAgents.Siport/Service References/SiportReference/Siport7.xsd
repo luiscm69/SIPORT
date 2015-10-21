@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Common.Seguridad.Parameters" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common.Seguridad.Parameters" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50010/Siport?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
+  <xs:complexType name="ListarMenuParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IdPerfil" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarMenuParameter" nillable="true" type="tns:ListarMenuParameter" />
+  <xs:complexType name="ObtenerDatosUsuarioParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoUsuario" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerDatosUsuarioParameter" nillable="true" type="tns:ObtenerDatosUsuarioParameter" />
+  <xs:complexType name="ValidarCredencialesUsuarioParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PasswordUsuario" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidarCredencialesUsuarioParameter" nillable="true" type="tns:ValidarCredencialesUsuarioParameter" />
+</xs:schema>

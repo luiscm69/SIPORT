@@ -1,0 +1,584 @@
+ERROR - 2015-10-06 19:57:43,789 - Anonimo [::1] - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Web.Siport.Controllers.OrdenServicioController.GetDetalleInsertarEditarModel(ObtenerOrdenServicioResult pdetalle) en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 98
+   en Web.Siport.Controllers.OrdenServicioController.GetDetalleInsertarEditarModel() en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 81
+   en Web.Siport.Controllers.OrdenServicioController.Insertar() en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 42
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR - 2015-10-06 20:00:36,282 - Anonimo [::1] - Referencia a objeto no establecida como instancia de un objeto.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Web.Siport.Controllers.OrdenServicioController.GetDetalleInsertarEditarModel(ObtenerOrdenServicioResult pdetalle) en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 98
+   en Web.Siport.Controllers.OrdenServicioController.GetDetalleInsertarEditarModel() en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 81
+   en Web.Siport.Controllers.OrdenServicioController.Insertar() en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 42
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  - 2015-10-06 21:09:14,441 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ERROR - 2015-10-06 21:11:37,095 - Anonimo [::1] - d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_DatosOrdenServicio.cshtml(18): error CS1061: 'System.Web.Mvc.HtmlHelper<Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel>' no contiene una definición de 'Trirand' ni se encontró ningún método de extensión 'Trirand' que acepte un primer argumento de tipo 'System.Web.Mvc.HtmlHelper<Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel>' (¿falta una directiva using o una referencia de ensamblado?)
+System.Web.HttpCompileException (0x80004005): d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_DatosOrdenServicio.cshtml(18): error CS1061: 'System.Web.Mvc.HtmlHelper<Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel>' no contiene una definición de 'Trirand' ni se encontró ningún método de extensión 'Trirand' que acepte un primer argumento de tipo 'System.Web.Mvc.HtmlHelper<Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel>' (¿falta una directiva using o una referencia de ensamblado?)
+   en System.Web.Compilation.AssemblyBuilder.Compile()
+   en System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   en System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   en System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   en System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   en System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   en System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   en System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   en System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   en System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__7(IViewEngine e)
+   en System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   en System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   en System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   en System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   en System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   en System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   en ASP._Page_Views_OrdenServicio_Insertar_cshtml.Execute() en d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\Insertar.cshtml:línea 15
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   en System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   en System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   en System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  - 2015-10-06 21:13:37,509 -  - 
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ERROR - 2015-10-06 21:16:26,816 - Anonimo [::1] - El valor no puede ser nulo.
+Nombre del parámetro: source
+System.ArgumentNullException: El valor no puede ser nulo.
+Nombre del parámetro: source
+   en System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   en Web.Siport.Controllers.OrdenServicioController.JsonListarOrdenServicioDestino(String pGuid) en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 107
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR - 2015-10-06 21:16:54,110 - Anonimo [::1] - El valor no puede ser nulo.
+Nombre del parámetro: source
+System.ArgumentNullException: El valor no puede ser nulo.
+Nombre del parámetro: source
+   en System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   en Web.Siport.Controllers.OrdenServicioController.JsonListarOrdenServicioDestino(String pGuid) en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 107
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  - 2015-10-06 21:17:34,145 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-06 22:47:19,396 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ERROR - 2015-10-06 22:56:54,007 - Anonimo [::1] - d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_DatosOrdenServicio.cshtml(17): error CS1061: 'Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel' no contiene una definición de 'NombreCliente' ni se encontró ningún método de extensión 'NombreCliente' que acepte un primer argumento de tipo 'Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel' (¿falta una directiva using o una referencia de ensamblado?)
+System.Web.HttpCompileException (0x80004005): d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_DatosOrdenServicio.cshtml(17): error CS1061: 'Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel' no contiene una definición de 'NombreCliente' ni se encontró ningún método de extensión 'NombreCliente' que acepte un primer argumento de tipo 'Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel' (¿falta una directiva using o una referencia de ensamblado?)
+   en System.Web.Compilation.AssemblyBuilder.Compile()
+   en System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   en System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   en System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   en System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   en System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   en System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   en System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   en System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   en System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__7(IViewEngine e)
+   en System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   en System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   en System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   en System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   en System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   en System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   en ASP._Page_Views_OrdenServicio_Insertar_cshtml.Execute() en d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\Insertar.cshtml:línea 26
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   en System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   en System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   en System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR - 2015-10-06 23:11:55,108 - Anonimo [::1] - No se espera el tipo 'QueryContracts.Siport.OrderServicio.Parameter.ObtenerOrdenServicioParameter' con el nombre de contrato de datos 'ObtenerOrdenServicioParameter:http://schemas.datacontract.org/2004/07/QueryContracts.Siport.OrderServicio.Parameter'. Intente usar DataContractResolver o agregar tipos no conocidos estáticamente a la lista de tipos conocidos (por ejemplo, usando el atributo KnownTypeAttribute o agregándolos a la lista de tipos conocidos que se pasa a DataContractSerializer).
+System.Runtime.Serialization.SerializationException: No se espera el tipo 'QueryContracts.Siport.OrderServicio.Parameter.ObtenerOrdenServicioParameter' con el nombre de contrato de datos 'ObtenerOrdenServicioParameter:http://schemas.datacontract.org/2004/07/QueryContracts.Siport.OrderServicio.Parameter'. Intente usar DataContractResolver o agregar tipos no conocidos estáticamente a la lista de tipos conocidos (por ejemplo, usando el atributo KnownTypeAttribute o agregándolos a la lista de tipos conocidos que se pasa a DataContractSerializer).
+   en System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   en System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithXsiTypeAtTopLevel(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle originalDeclaredTypeHandle, Type graphType)
+   en System.Runtime.Serialization.DataContractSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   en System.Runtime.Serialization.DataContractSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   en System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   en System.Runtime.Serialization.XmlObjectSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   en System.ServiceModel.Dispatcher.DataContractSerializerOperationFormatter.SerializeParameterPart(XmlDictionaryWriter writer, PartInfo part, Object graph)
+ERROR - 2015-10-06 23:12:09,306 - Anonimo [::1] - No se espera el tipo 'QueryContracts.Siport.OrderServicio.Parameter.ObtenerOrdenServicioParameter' con el nombre de contrato de datos 'ObtenerOrdenServicioParameter:http://schemas.datacontract.org/2004/07/QueryContracts.Siport.OrderServicio.Parameter'. Intente usar DataContractResolver o agregar tipos no conocidos estáticamente a la lista de tipos conocidos (por ejemplo, usando el atributo KnownTypeAttribute o agregándolos a la lista de tipos conocidos que se pasa a DataContractSerializer).
+System.Runtime.Serialization.SerializationException: No se espera el tipo 'QueryContracts.Siport.OrderServicio.Parameter.ObtenerOrdenServicioParameter' con el nombre de contrato de datos 'ObtenerOrdenServicioParameter:http://schemas.datacontract.org/2004/07/QueryContracts.Siport.OrderServicio.Parameter'. Intente usar DataContractResolver o agregar tipos no conocidos estáticamente a la lista de tipos conocidos (por ejemplo, usando el atributo KnownTypeAttribute o agregándolos a la lista de tipos conocidos que se pasa a DataContractSerializer).
+   en System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   en System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithXsiTypeAtTopLevel(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle originalDeclaredTypeHandle, Type graphType)
+   en System.Runtime.Serialization.DataContractSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   en System.Runtime.Serialization.DataContractSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   en System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   en System.Runtime.Serialization.XmlObjectSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   en System.ServiceModel.Dispatcher.DataContractSerializerOperationFormatter.SerializeParameterPart(XmlDictionaryWriter writer, PartInfo part, Object graph)
+INFO  - 2015-10-06 23:13:17,910 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84360AC8-C346-43DA-A960-724766203A1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QueryContracts.Common</RootNamespace>
+    <AssemblyName>QueryContracts.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryParameter.cs" />
+    <Compile Include="QueryResult.cs" />
+    <Compile Include="Seguridad\Parameters\ListarMenuParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ObtenerDatosConexionParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ObtenerDatosUsuarioParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ValidarCredencialesUsuarioParameter.cs" />
+    <Compile Include="Seguridad\Results\ListarMenuResult.cs" />
+    <Compile Include="Seguridad\Results\ObtenerDatosConexionResult.cs" />
+    <Compile Include="Seguridad\Results\ObtenerDatosUsuarioResult.cs" />
+    <Compile Include="Seguridad\Results\ValidarCredencialesUsuarioResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Seguridad\Parameters\Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infraestructure.Common\Infraestructure.Common.csproj">
+      <Project>{3413c010-f57f-4b05-9a95-980a16ea768e}</Project>
+      <Name>Infraestructure.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

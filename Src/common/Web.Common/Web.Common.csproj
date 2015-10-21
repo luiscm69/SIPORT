@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{965909D5-63FD-4A31-899E-BD49CE71DFC0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web.Common</RootNamespace>
+    <AssemblyName>Web.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\app\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\app\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\..\Lib\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\app\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\app\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trirand.Web.Mvc">
+      <HintPath>..\..\..\Lib\Trirand\Trirand.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\app\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionResults\CommandActionResult.cs" />
+    <Compile Include="ActionResults\QueryViewResult.cs" />
+    <Compile Include="AuthenticationServices\UpdatePerfilService.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Extensions\JQGridColumnExtensions.cs" />
+    <Compile Include="Extensions\JqGridExtensions.cs" />
+    <Compile Include="HtmlHelpers\ActionLinkHelpers.cs" />
+    <Compile Include="HtmlHelpers\BootstrapInputFor.cs" />
+    <Compile Include="HtmlHelpers\BootstrapSelectFor.cs" />
+    <Compile Include="HtmlHelpers\BootstrapTextAreaFor.cs" />
+    <Compile Include="HtmlHelpers\CurrencyFor.cs" />
+    <Compile Include="HtmlHelpers\DatePickerFor.cs" />
+    <Compile Include="HtmlHelpers\DescriptionFor.cs" />
+    <Compile Include="HtmlHelpers\EditorHelpers.cs" />
+    <Compile Include="HtmlHelpers\Glyphicon.cs" />
+    <Compile Include="HtmlHelpers\HelperMethods.cs" />
+    <Compile Include="HtmlHelpers\HelpMeFor.cs" />
+    <Compile Include="HtmlHelpers\MenuHtmlHelpers.cs" />
+    <Compile Include="HtmlHelpers\MenuLink.cs" />
+    <Compile Include="HtmlHelpers\PaginationFor.cs" />
+    <Compile Include="HttpApplications\ActionFilters\CustomAuthorizeAttribute.cs" />
+    <Compile Include="HttpApplications\ActionFilters\EncryptedActionParameterAttribute.cs" />
+    <Compile Include="HttpApplications\ActionFilters\GlobalViewDataAttribute.cs" />
+    <Compile Include="HttpApplications\ActionFilters\LoggingAttribute.cs" />
+    <Compile Include="HttpApplications\ActionFilters\PerfilLoadAttribute.cs" />
+    <Compile Include="HttpApplications\ActionFilters\SessionExpiredAttribute.cs" />
+    <Compile Include="HttpApplications\AppConfig\BundleConfig.cs" />
+    <Compile Include="HttpApplications\AppConfig\FilterConfig.cs" />
+    <Compile Include="HttpApplications\AppConfig\LoginProviderConfig.cs" />
+    <Compile Include="HttpApplications\AppConfig\RouteConfig.cs" />
+    <Compile Include="HttpApplications\AppConfig\WebApiConfig.cs" />
+    <Compile Include="HttpApplications\CommonHttpApplication.cs" />
+    <Compile Include="HttpModules\AjaxAuthorizationModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bootstrapper.Web.Common\Bootstrapper.Web.Common.csproj">
+      <Project>{29141533-FC99-4C1A-A0EF-3095C6A7041B}</Project>
+      <Name>Bootstrapper.Web.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandContracts.Common\CommandContracts.Common.csproj">
+      <Project>{F36173D9-9783-472A-B943-4D306BA3CD9D}</Project>
+      <Name>CommandContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes.Common\Componentes.Common.csproj">
+      <Project>{617D1A0D-2E6A-4868-BE96-AFA6BDEE07CC}</Project>
+      <Name>Componentes.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure.Common\Infraestructure.Common.csproj">
+      <Project>{3413C010-F57F-4B05-9A95-980A16EA768E}</Project>
+      <Name>Infraestructure.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryContracts.Common\QueryContracts.Common.csproj">
+      <Project>{84360AC8-C346-43DA-A960-724766203A1C}</Project>
+      <Name>QueryContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguridad.Common\Seguridad.Common.csproj">
+      <Project>{6E2E7FC7-BEA9-4B0E-BA91-3D6A3786189C}</Project>
+      <Name>Seguridad.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceAgents.Common\ServiceAgents.Common.csproj">
+      <Project>{7735551A-DCF6-4B90-9A5C-CD20705FB393}</Project>
+      <Name>ServiceAgents.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

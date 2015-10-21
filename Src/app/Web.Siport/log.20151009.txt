@@ -1,0 +1,749 @@
+ERROR - 2015-10-09 00:03:50,064 - Anonimo [::1] - No hay ningún elemento ViewData de tipo 'IEnumerable<SelectListItem>' con la clave 'departamento'.
+System.InvalidOperationException: No hay ningún elemento ViewData de tipo 'IEnumerable<SelectListItem>' con la clave 'departamento'.
+   en System.Web.Mvc.Html.SelectExtensions.GetSelectData(HtmlHelper htmlHelper, String name)
+   en System.Web.Mvc.Html.SelectExtensions.SelectInternal(HtmlHelper htmlHelper, ModelMetadata metadata, String optionLabel, String name, IEnumerable`1 selectList, Boolean allowMultiple, IDictionary`2 htmlAttributes)
+   en System.Web.Mvc.Html.SelectExtensions.DropDownList(HtmlHelper htmlHelper, String name, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   en ASP._Page_Views_OrdenServicio__OrdenServicioDestino_cshtml.Execute() en d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml:línea 26
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   en System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   en System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   en System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR - 2015-10-09 00:25:17,474 - Anonimo [::1] - d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml(26): error CS1012: Demasiados caracteres en literal de carácter
+System.Web.HttpCompileException (0x80004005): d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml(26): error CS1012: Demasiados caracteres en literal de carácter
+   en System.Web.Compilation.AssemblyBuilder.Compile()
+   en System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   en System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   en System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   en System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   en System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   en System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   en System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   en System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   en System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__7(IViewEngine e)
+   en System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   en System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   en System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR - 2015-10-09 00:25:24,561 - Anonimo [::1] - d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml(26): error CS1012: Demasiados caracteres en literal de carácter
+System.Web.HttpCompileException (0x80004005): d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml(26): error CS1012: Demasiados caracteres en literal de carácter
+   en System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   en System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   en System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   en System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   en System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   en System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   en System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   en System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   en System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__7(IViewEngine e)
+   en System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   en System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   en System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR - 2015-10-09 00:29:07,846 - Anonimo [::1] - d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml(25): error CS1012: Demasiados caracteres en literal de carácter
+System.Web.HttpCompileException (0x80004005): d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml(25): error CS1012: Demasiados caracteres en literal de carácter
+   en System.Web.Compilation.AssemblyBuilder.Compile()
+   en System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   en System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   en System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   en System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   en System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   en System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.Microsoft.Web.Mvc.IViewEngineProxy.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FileExists(ControllerContext controllerContext, String virtualPath)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.<>c__DisplayClass4.<GetPathFromGeneralName>b__0(String path)
+   en System.Web.WebPages.DefaultDisplayMode.GetDisplayInfo(HttpContextBase httpContext, String virtualPath, Func`2 virtualPathExists)
+   en System.Web.WebPages.DisplayModeProvider.<>c__DisplayClassb.<GetDisplayInfoForVirtualPath>b__8(IDisplayMode mode)
+   en System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   en System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode, Boolean requireConsistentDisplayMode)
+   en System.Web.WebPages.DisplayModeProvider.GetDisplayInfoForVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, IDisplayMode currentDisplayMode)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   en Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en Microsoft.Web.Mvc.FixedRazorViewEngine.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   en System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass8.<FindPartialView>b__7(IViewEngine e)
+   en System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   en System.Web.Mvc.ViewEngineCollection.FindPartialView(ControllerContext controllerContext, String partialViewName)
+   en System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  - 2015-10-09 01:17:34,001 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ERROR - 2015-10-09 01:17:47,144 - Anonimo [::1] - DataBinding: 'QueryContracts.Siport.OrderServicio.Result.ListarHorarioEntregaDto' no contiene una propiedad con el nombre 'DesHorarioEntrega'.
+System.Web.HttpException (0x80004005): DataBinding: 'QueryContracts.Siport.OrderServicio.Result.ListarHorarioEntregaDto' no contiene una propiedad con el nombre 'DesHorarioEntrega'.
+   en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   en System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   en System.Web.UI.DataBinder.Eval(Object container, String expression)
+   en System.Web.Mvc.MultiSelectList.Eval(Object container, String expression)
+   en System.Web.Mvc.MultiSelectList.<>c__DisplayClass6.<GetListItemsWithValueField>b__4(<>f__AnonymousType7`2 <>h__TransparentIdentifier0)
+   en System.Linq.Enumerable.<>c__DisplayClass12`3.<CombineSelectors>b__11(TSource x)
+   en System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en System.Web.Mvc.MultiSelectList.GetListItemsWithValueField()
+   en System.Web.Mvc.MultiSelectList.GetListItems()
+   en System.Web.Mvc.MultiSelectList.GetEnumerator()
+   en System.Web.Mvc.Html.SelectExtensions.SelectInternal(HtmlHelper htmlHelper, ModelMetadata metadata, String optionLabel, String name, IEnumerable`1 selectList, Boolean allowMultiple, IDictionary`2 htmlAttributes)
+   en System.Web.Mvc.Html.SelectExtensions.DropDownListFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, String optionLabel, IDictionary`2 htmlAttributes)
+   en System.Web.Mvc.Html.SelectExtensions.DropDownListFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   en ASP._Page_Views_OrdenServicio__OrdenServicioDestino_cshtml.Execute() en d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml:línea 17
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   en System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   en System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   en System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR - 2015-10-09 01:17:55,449 - Anonimo [::1] - DataBinding: 'QueryContracts.Siport.OrderServicio.Result.ListarHorarioEntregaDto' no contiene una propiedad con el nombre 'DesHorarioEntrega'.
+System.Web.HttpException (0x80004005): DataBinding: 'QueryContracts.Siport.OrderServicio.Result.ListarHorarioEntregaDto' no contiene una propiedad con el nombre 'DesHorarioEntrega'.
+   en System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   en System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   en System.Web.UI.DataBinder.Eval(Object container, String expression)
+   en System.Web.Mvc.MultiSelectList.Eval(Object container, String expression)
+   en System.Web.Mvc.MultiSelectList.<>c__DisplayClass6.<GetListItemsWithValueField>b__4(<>f__AnonymousType7`2 <>h__TransparentIdentifier0)
+   en System.Linq.Enumerable.<>c__DisplayClass12`3.<CombineSelectors>b__11(TSource x)
+   en System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en System.Web.Mvc.MultiSelectList.GetListItemsWithValueField()
+   en System.Web.Mvc.MultiSelectList.GetListItems()
+   en System.Web.Mvc.MultiSelectList.GetEnumerator()
+   en System.Web.Mvc.Html.SelectExtensions.SelectInternal(HtmlHelper htmlHelper, ModelMetadata metadata, String optionLabel, String name, IEnumerable`1 selectList, Boolean allowMultiple, IDictionary`2 htmlAttributes)
+   en System.Web.Mvc.Html.SelectExtensions.DropDownListFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, String optionLabel, IDictionary`2 htmlAttributes)
+   en System.Web.Mvc.Html.SelectExtensions.DropDownListFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, String optionLabel, Object htmlAttributes)
+   en ASP._Page_Views_OrdenServicio__OrdenServicioDestino_cshtml.Execute() en d:\SIPORT\Src\app\Web.Siport\Views\OrdenServicio\_OrdenServicioDestino.cshtml:línea 17
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   en System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   en System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   en System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   en System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR - 2015-10-09 01:18:51,930 - Anonimo [::1] - Se ha producido un error
+System.ServiceModel.FaultException: Se ha producido un error
+
+Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en ServiceAgents.Siport.SiportReference.IBackendService.ExecuteQuery(QueryParameter parameter)
+   en ServiceAgents.Siport.SiportReference.BackendServiceClient.ExecuteQuery(QueryParameter parameter) en d:\SIPORT\Src\app\ServiceAgents.Siport\Service References\SiportReference\Reference.cs:línea 74
+   en ServiceAgents.Siport.SiportBackendClient.ExecuteQuery(QueryParameter parameter) en d:\SIPORT\Src\app\ServiceAgents.Siport\SiportBackendClient.cs:línea 34
+   en ServiceAgents.Common.Extensions.Execute(QueryParameter parameter) en d:\SIPORT\Src\common\ServiceAgents.Common\Extensions.cs:línea 27
+   en Web.Siport.DataAccess.DAOrdenServicio.GetListarHorarioEntrega() en d:\SIPORT\Src\app\Web.Siport\DataAccess\DAOrdenServicio.cs:línea 21
+   en Web.Siport.Controllers.OrdenServicioController.ListarHorarioEntrega() en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 226
+   en Web.Siport.Controllers.OrdenServicioController.AgregarInsertar() en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 236
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  - 2015-10-09 01:52:58,390 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-09 02:10:39,334 -  - 
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-09 09:08:35,871 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ERROR - 2015-10-09 09:33:19,431 - Anonimo [::1] - Tiene que ingresar el modelo
+System.ArgumentException: Tiene que ingresar el modelo
+   en Web.Siport.Controllers.OrdenServicioController.GrabarOrdenServicioDestino(String pdata, String pguid) en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 245
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  - 2015-10-09 10:58:07,946 -  - 
+
+_shutDownMessage=Recompilation limit of 15 reached
+HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.Compilation.DiskBuildResultCache.ShutdownCallBack(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-09 11:31:58,057 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment originó el cierre
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+INFO  - 2015-10-09 11:32:40,164 -  - 
+
+_shutDownMessage=Cambiar la notificación para directorios importantes.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   en System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   en System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   en System.Web.DirectoryMonitor.FireNotifications()
+   en System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   en System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   en System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   en System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   en System.Threading.ThreadPoolWorkQueue.Dispatch()
+   en System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ERROR - 2015-10-09 12:20:57,324 - Anonimo [::1] - La cadena de entrada no tiene el formato correcto.
+System.FormatException: La cadena de entrada no tiene el formato correcto.
+   en System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Double.Parse(String s, NumberStyles style, IFormatProvider provider)
+   en System.ComponentModel.DoubleConverter.FromString(String value, NumberFormatInfo formatInfo)
+   en System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+DEBUG - 2015-10-09 12:21:46,713 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdOrdenServicio = -System.Nullable`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+DEBUG - 2015-10-09 12:21:46,714 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoOrdServicio = ORD001-System.String
+DEBUG - 2015-10-09 12:21:46,714 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Descripcion = ESTO ES UNA PRUEBA-System.String
+DEBUG - 2015-10-09 12:21:46,714 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Comentario = -System.String
+DEBUG - 2015-10-09 12:21:46,715 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  FechaCreacion = 01/01/0001 12:00:00 a.m.-System.DateTime
+DEBUG - 2015-10-09 12:21:46,715 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  UsuarioCreacion = -System.String
+DEBUG - 2015-10-09 12:21:46,715 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogFecha = 09/10/2015 12:21:19 p.m.-System.DateTime
+DEBUG - 2015-10-09 12:21:46,715 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogUsuario = gcuentas-System.String
+DEBUG - 2015-10-09 12:21:46,716 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdClientes = 1-System.Double
+DEBUG - 2015-10-09 12:21:46,716 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoCliente = CL0001-System.String
+DEBUG - 2015-10-09 12:21:46,716 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  NombreRazonSocial = Gustavo Cuentas-System.String
+DEBUG - 2015-10-09 12:21:46,716 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  ListaDestinosCommand = System.Collections.Generic.List`1[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand]-System.Collections.Generic.IEnumerable`1[[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand, CommandContracts.Siport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG - 2015-10-09 12:25:39,834 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdOrdenServicio = -System.Nullable`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+DEBUG - 2015-10-09 12:25:39,845 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoOrdServicio = ORD001-System.String
+DEBUG - 2015-10-09 12:25:39,845 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Descripcion = ESTO ES UNA PRUEBA-System.String
+DEBUG - 2015-10-09 12:25:39,845 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Comentario = -System.String
+DEBUG - 2015-10-09 12:25:39,853 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  FechaCreacion = 01/01/0001 12:00:00 a.m.-System.DateTime
+DEBUG - 2015-10-09 12:25:39,853 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  UsuarioCreacion = -System.String
+DEBUG - 2015-10-09 12:25:39,853 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogFecha = 09/10/2015 12:25:39 p.m.-System.DateTime
+DEBUG - 2015-10-09 12:25:39,854 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogUsuario = gcuentas-System.String
+DEBUG - 2015-10-09 12:25:39,854 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdClientes = 1-System.Double
+DEBUG - 2015-10-09 12:25:39,854 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoCliente = CL0001-System.String
+DEBUG - 2015-10-09 12:25:39,854 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  NombreRazonSocial = Gustavo Cuentas-System.String
+DEBUG - 2015-10-09 12:25:39,855 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  ListaDestinosCommand = System.Collections.Generic.List`1[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand]-System.Collections.Generic.IEnumerable`1[[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand, CommandContracts.Siport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ERROR - 2015-10-09 12:28:34,440 - Anonimo [::1] - El valor no puede ser nulo.
+Nombre del parámetro: No se encontro el codigo del cliente ingresado
+System.ArgumentNullException: El valor no puede ser nulo.
+Nombre del parámetro: No se encontro el codigo del cliente ingresado
+   en Web.Siport.Controllers.OrdenServicioController.ObtenerCliente(String pCodigoCliente) en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 272
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+DEBUG - 2015-10-09 12:29:01,346 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdOrdenServicio = -System.Nullable`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+DEBUG - 2015-10-09 12:29:01,346 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoOrdServicio = ORD002-System.String
+DEBUG - 2015-10-09 12:29:01,346 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Descripcion = dddd-System.String
+DEBUG - 2015-10-09 12:29:01,347 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Comentario = -System.String
+DEBUG - 2015-10-09 12:29:01,347 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  FechaCreacion = 01/01/0001 12:00:00 a.m.-System.DateTime
+DEBUG - 2015-10-09 12:29:01,348 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  UsuarioCreacion = -System.String
+DEBUG - 2015-10-09 12:29:01,348 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogFecha = 09/10/2015 12:29:01 p.m.-System.DateTime
+DEBUG - 2015-10-09 12:29:01,349 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogUsuario = gcuentas-System.String
+DEBUG - 2015-10-09 12:29:01,349 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdClientes = 2-System.Double
+DEBUG - 2015-10-09 12:29:01,349 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoCliente = CL0002-System.String
+DEBUG - 2015-10-09 12:29:01,349 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  NombreRazonSocial = Luis Caiguaraico-System.String
+DEBUG - 2015-10-09 12:29:01,350 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  ListaDestinosCommand = System.Collections.Generic.List`1[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand]-System.Collections.Generic.IEnumerable`1[[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand, CommandContracts.Siport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ERROR - 2015-10-09 12:34:31,521 - Anonimo [::1] - Se excedió el tiempo de espera de la operación
+System.Net.WebException: Se excedió el tiempo de espera de la operación
+   en System.Net.HttpWebRequest.GetResponse()
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+ERROR - 2015-10-09 12:35:55,898 - Anonimo [::1] - La session del modelo se ha perdido.
+System.NullReferenceException: La session del modelo se ha perdido.
+   en Web.Siport.Controllers.OrdenServicioController.Insertar(OrdenServicioCabeceraModel modelo, FormCollection formcollection) en d:\SIPORT\Src\app\Web.Siport\Controllers\OrdenServicioController.cs:línea 38
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+DEBUG - 2015-10-09 12:36:36,073 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdOrdenServicio = -System.Nullable`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+DEBUG - 2015-10-09 12:36:36,074 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoOrdServicio = 234234-System.String
+DEBUG - 2015-10-09 12:36:36,074 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Descripcion = TEST -System.String
+DEBUG - 2015-10-09 12:36:36,074 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Comentario = -System.String
+DEBUG - 2015-10-09 12:36:36,075 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  FechaCreacion = 01/01/0001 12:00:00 a.m.-System.DateTime
+DEBUG - 2015-10-09 12:36:36,075 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  UsuarioCreacion = -System.String
+DEBUG - 2015-10-09 12:36:36,075 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogFecha = 09/10/2015 12:36:35 p.m.-System.DateTime
+DEBUG - 2015-10-09 12:36:36,075 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogUsuario = gcuentas-System.String
+DEBUG - 2015-10-09 12:36:36,076 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdClientes = 2-System.Double
+DEBUG - 2015-10-09 12:36:36,076 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoCliente = CL0002-System.String
+DEBUG - 2015-10-09 12:36:36,076 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  NombreRazonSocial = Luis Caiguaraico-System.String
+DEBUG - 2015-10-09 12:36:36,077 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  ListaDestinosCommand = System.Collections.Generic.List`1[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand]-System.Collections.Generic.IEnumerable`1[[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand, CommandContracts.Siport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG - 2015-10-09 12:39:11,283 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdOrdenServicio = -System.Nullable`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+DEBUG - 2015-10-09 12:39:11,293 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoOrdServicio = ORD001-System.String
+DEBUG - 2015-10-09 12:39:11,294 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Descripcion = TEST 1-System.String
+DEBUG - 2015-10-09 12:39:11,294 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Comentario = -System.String
+DEBUG - 2015-10-09 12:39:11,302 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  FechaCreacion = 01/01/0001 12:00:00 a.m.-System.DateTime
+DEBUG - 2015-10-09 12:39:11,303 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  UsuarioCreacion = -System.String
+DEBUG - 2015-10-09 12:39:11,303 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogFecha = 09/10/2015 12:39:11 p.m.-System.DateTime
+DEBUG - 2015-10-09 12:39:11,303 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogUsuario = gcuentas-System.String
+DEBUG - 2015-10-09 12:39:11,304 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdClientes = 0-System.Double
+DEBUG - 2015-10-09 12:39:11,304 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoCliente = CL0001-System.String
+DEBUG - 2015-10-09 12:39:11,304 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  NombreRazonSocial = -System.String
+DEBUG - 2015-10-09 12:39:11,305 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  ListaDestinosCommand = System.Collections.Generic.List`1[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand]-System.Collections.Generic.IEnumerable`1[[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand, CommandContracts.Siport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG - 2015-10-09 12:44:05,559 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdOrdenServicio = -System.Nullable`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+DEBUG - 2015-10-09 12:44:05,590 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoOrdServicio = ORD006-System.String
+DEBUG - 2015-10-09 12:44:05,591 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Descripcion = ESTO ES UNA PRUEBA-System.String
+DEBUG - 2015-10-09 12:44:05,591 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  Comentario = -System.String
+DEBUG - 2015-10-09 12:44:05,599 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  FechaCreacion = 01/01/0001 12:00:00 a.m.-System.DateTime
+DEBUG - 2015-10-09 12:44:05,600 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  UsuarioCreacion = -System.String
+DEBUG - 2015-10-09 12:44:05,600 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogFecha = 09/10/2015 12:44:05 p.m.-System.DateTime
+DEBUG - 2015-10-09 12:44:05,600 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  LogUsuario = gcuentas-System.String
+DEBUG - 2015-10-09 12:44:05,601 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  IdClientes = 2-System.Double
+DEBUG - 2015-10-09 12:44:05,601 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  CodigoCliente = CL0002-System.String
+DEBUG - 2015-10-09 12:44:05,601 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  NombreRazonSocial = Luis Caiguaraico-System.String
+DEBUG - 2015-10-09 12:44:05,602 - Anonimo [::1] - ::::::METADATA SERVER WEB::::::CommandContracts.Siport.OrdenServicio.DetalleInsertarEditarOrdSrvCommand  ListaDestinosCommand = System.Collections.Generic.List`1[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand]-System.Collections.Generic.IEnumerable`1[[CommandContracts.Siport.OrdenServicio.OrdenServicioDestinoCommand, CommandContracts.Siport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]

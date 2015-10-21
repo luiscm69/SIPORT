@@ -1,0 +1,7 @@
+D:\UPC\PI2\Software\SIPORT\Src\app\Domain.Siport\bin\Debug\Domain.Siport.dll
+D:\UPC\PI2\Software\SIPORT\Src\app\Domain.Siport\bin\Debug\Domain.Siport.pdb
+D:\UPC\PI2\Software\SIPORT\Src\app\Domain.Siport\bin\Debug\Domain.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\app\Domain.Siport\bin\Debug\Domain.Common.pdb
+D:\UPC\PI2\Software\SIPORT\Src\app\Domain.Siport\obj\Debug\Domain.Siport.csprojResolveAssemblyReference.cache
+D:\UPC\PI2\Software\SIPORT\Src\app\Domain.Siport\obj\Debug\Domain.Siport.dll
+D:\UPC\PI2\Software\SIPORT\Src\app\Domain.Siport\obj\Debug\Domain.Siport.pdb

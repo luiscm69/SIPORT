@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Siport.HojaRuta.Result" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Siport.HojaRuta.Result" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50010/Siport?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
+  <xs:complexType name="ListarOrdenServicioDisponibleResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarOrdenServicioDisponibleDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarOrdenServicioDisponibleResult" nillable="true" type="tns:ListarOrdenServicioDisponibleResult" />
+  <xs:complexType name="ArrayOfListarOrdenServicioDisponibleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarOrdenServicioDisponibleDto" nillable="true" type="tns:ListarOrdenServicioDisponibleDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarOrdenServicioDisponibleDto" nillable="true" type="tns:ArrayOfListarOrdenServicioDisponibleDto" />
+  <xs:complexType name="ListarOrdenServicioDisponibleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DesOrdenServicioDestino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdOrdenServicioDestino" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarOrdenServicioDisponibleDto" nillable="true" type="tns:ListarOrdenServicioDisponibleDto" />
+  <xs:complexType name="ListarVehiculosDisponiblesResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarVehiculosDisponiblesDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarVehiculosDisponiblesResult" nillable="true" type="tns:ListarVehiculosDisponiblesResult" />
+  <xs:complexType name="ArrayOfListarVehiculosDisponiblesDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarVehiculosDisponiblesDto" nillable="true" type="tns:ListarVehiculosDisponiblesDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarVehiculosDisponiblesDto" nillable="true" type="tns:ArrayOfListarVehiculosDisponiblesDto" />
+  <xs:complexType name="ListarVehiculosDisponiblesDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EstadoVehiculo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaEstEntrega" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdVehiculo" type="xs:double" />
+      <xs:element minOccurs="0" name="NumeroPlaca" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarVehiculosDisponiblesDto" nillable="true" type="tns:ListarVehiculosDisponiblesDto" />
+</xs:schema>

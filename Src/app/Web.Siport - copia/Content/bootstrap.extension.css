@@ -1,0 +1,32 @@
+﻿.navbar {
+    margin-bottom:0px;
+}
+
+.jumbotron-hm {
+    background-color:#428BCA;
+    color:#ffffff;
+    padding:20px 0px;
+}
+.jumbotron-min {
+    background-color:#428BCA;
+    color:#ffffff;
+    padding:0px 0px;
+    height:65px;
+}
+
+.ui-jqgrid .ui-jqgrid-caption {
+    font-weight: bold!important;
+}
+
+.table>caption+thead>tr:first-child>td, 
+.table>caption+thead>tr:first-child>th, 
+.table>colgroup+thead>tr:first-child>td, 
+.table>colgroup+thead>tr:first-child>th, 
+.table>thead:first-child>tr:first-child>td, 
+.table>thead:first-child>tr:first-child>th {
+    font-size: 14px;   
+}
+
+.ui-jqgrid tr.jqgrow td {
+ font-size: 14px; 
+}

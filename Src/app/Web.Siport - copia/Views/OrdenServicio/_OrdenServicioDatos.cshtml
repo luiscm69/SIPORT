@@ -1,0 +1,40 @@
+﻿@model  Web.Siport.Models.OrdenServicio.DetalleInsertarEditarOrdSrvModel
+@using Trirand.Web.Mvc
+
+<div class="form-group">
+    @Html.LabelFor(model => model.CodigoOrdServicio, new { @class = "control-label col-xs-1" })
+    <div class="col-xs-2">
+        @Html.TextBoxFor(model => model.CodigoOrdServicio, new { @class = "form-control", @placeholder = "Código Orden de Servicio" })
+    </div>
+
+    @Html.LabelFor(model => model.CodigoCliente, new { @class = "control-label col-xs-1" })
+    <div class="col-xs-2">
+        @Html.TextBoxFor(model => model.CodigoCliente, new { @class = "form-control", @placeholder = "Cliente" })
+    </div>
+    <div class="col-xs-5">
+        <span class="form-control-static">@Html.DisplayFor(model => model.NombreRazonSocial)</span> 
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Descripcion, new { @class = "control-label col-xs-1" })
+    <div class="col-xs-10">
+        @Html.TextBoxFor(model => model.Descripcion, new { @class = "form-control", @placeholder = "Código Orden de Servicio" })
+    </div>
+</div>
+
+<a class="btn btn-primary btn-xs" href="@Url.Action("AgregarInsertar", "OrdenServicio")">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Agregar
+</a>
+
+<button id="btnagregar" type="button" class="btn btn-primary btn-xs" data-urlmodal='@Url.Action("AgregarInsertar", "OrdenServicio")'>
+    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Agregar Boton
+</button>
+
+<button id="btneliminar" type="button" class="btn btn-primary btn-xs">
+    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Eliminar
+</button>
+
+<table id="listadestinosgrid" data-jsonurl='@Url.Action("JsonListarOrdenServicioDestino", null, new { pGuid = Model.IdGuid})'></table>
+<div id="page"></div>
+
+

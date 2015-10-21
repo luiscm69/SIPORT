@@ -1,0 +1,13 @@
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\log4net.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\NPOI.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\log4net.xml
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\bin\Debug\NPOI.xml
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojResolveAssemblyReference.cache
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb

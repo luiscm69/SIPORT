@@ -1,0 +1,6 @@
+D:\UPC\PI2\Software\SIPORT\Src\common\Domain.Common\bin\Debug\Domain.Common.dll.config
+D:\UPC\PI2\Software\SIPORT\Src\common\Domain.Common\bin\Debug\Domain.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+D:\UPC\PI2\Software\SIPORT\Src\common\Domain.Common\obj\Debug\Domain.Common.csprojResolveAssemblyReference.cache
+D:\UPC\PI2\Software\SIPORT\Src\common\Domain.Common\obj\Debug\Domain.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Domain.Common\obj\Debug\Domain.Common.pdb

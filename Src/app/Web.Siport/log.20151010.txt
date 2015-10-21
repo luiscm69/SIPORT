@@ -1,0 +1,50 @@
+ERROR - 2015-10-10 00:42:36,000 - Anonimo [::1] - No se encuentra la vista 'Index' ni su vista maestra o no hay un motor de búsqueda que admita las ubicaciones de búsqueda. Se buscó en las siguientes ubicaciones: 
+~/Views/hojaruta/Index.aspx
+~/Views/hojaruta/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/hojaruta/Index.cshtml
+~/Views/hojaruta/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+System.InvalidOperationException: No se encuentra la vista 'Index' ni su vista maestra o no hay un motor de búsqueda que admita las ubicaciones de búsqueda. Se buscó en las siguientes ubicaciones: 
+~/Views/hojaruta/Index.aspx
+~/Views/hojaruta/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/hojaruta/Index.cshtml
+~/Views/hojaruta/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   en System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   en System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   en System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   en System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   en System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

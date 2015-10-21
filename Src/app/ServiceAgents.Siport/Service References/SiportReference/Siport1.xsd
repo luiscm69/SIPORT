@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50010/Siport?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
+  <xs:import schemaLocation="http://localhost:50010/Siport?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
+  <xs:element name="ExecuteCommand">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" minOccurs="0" name="command" nillable="true" type="q1:Command" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteCommandResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CommandContracts.Common" minOccurs="0" name="ExecuteCommandResult" nillable="true" type="q2:CommandResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteQuery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" minOccurs="0" name="parameter" nillable="true" type="q3:QueryParameter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteQueryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" minOccurs="0" name="ExecuteQueryResult" nillable="true" type="q4:QueryResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

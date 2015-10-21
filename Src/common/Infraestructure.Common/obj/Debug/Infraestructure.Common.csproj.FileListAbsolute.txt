@@ -1,0 +1,14 @@
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\Infraestructure.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\Infraestructure.Common.pdb
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\FluentValidation.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\log4net.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\StructureMap.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\FluentValidation.pdb
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\FluentValidation.xml
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\log4net.xml
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\StructureMap.pdb
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\StructureMap.xml
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\bin\Debug\es\FluentValidation.resources.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.csprojResolveAssemblyReference.cache
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.pdb

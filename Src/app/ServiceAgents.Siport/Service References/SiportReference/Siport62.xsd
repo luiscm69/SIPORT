@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Siport.OrderServicio.Parameter" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Siport.OrderServicio.Parameter" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50010/Siport?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
+  <xs:complexType name="ListarHorarioEntregaParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarHorarioEntregaParameter" nillable="true" type="tns:ListarHorarioEntregaParameter" />
+  <xs:complexType name="ListarOrdenServicioParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarOrdenServicioParameter" nillable="true" type="tns:ListarOrdenServicioParameter" />
+  <xs:complexType name="ObtenerOrdenServicioDestinoParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IdOrdenServicioDestino" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerOrdenServicioDestinoParameter" nillable="true" type="tns:ObtenerOrdenServicioDestinoParameter" />
+  <xs:complexType name="ObtenerOrdenServicioParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoOrdenServicio" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerOrdenServicioParameter" nillable="true" type="tns:ObtenerOrdenServicioParameter" />
+</xs:schema>

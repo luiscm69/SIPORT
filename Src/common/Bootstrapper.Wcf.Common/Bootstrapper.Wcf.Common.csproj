@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{632D8D2C-D866-4AEF-9A13-AC62C887AD03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bootstrapper.Wcf.Common</RootNamespace>
+    <AssemblyName>Bootstrapper.Wcf.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\Lib\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>..\..\..\Lib\FluentValidation.3.1.0.0\lib\Net40\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\..\Lib\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DependencyResolution\Registries\CommandsRegistry.cs" />
+    <Compile Include="DependencyResolution\Registries\ContractValidatorsRegistry.cs" />
+    <Compile Include="DependencyResolution\Registries\DataRegistry.cs" />
+    <Compile Include="DependencyResolution\Registries\QueriesRegistry.cs" />
+    <Compile Include="DependencyResolution\Registries\ValidationEngineRegistry.cs" />
+    <Compile Include="DependencyResolution\WcfDependencyRegistrar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WcfStartUp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommandContracts.Common\CommandContracts.Common.csproj">
+      <Project>{F36173D9-9783-472A-B943-4D306BA3CD9D}</Project>
+      <Name>CommandContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandHandlers.Common\CommandHandlers.Common.csproj">
+      <Project>{151416F0-D3CE-48D6-ACCE-EB1EEBD5AD18}</Project>
+      <Name>CommandHandlers.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.Common\Data.Common.csproj">
+      <Project>{d85cc985-2203-4f65-be6b-61da9b4a00fb}</Project>
+      <Name>Data.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Common\Domain.Common.csproj">
+      <Project>{fb8fea64-18e2-47a5-b277-30bbf68f297f}</Project>
+      <Name>Domain.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure.Common\Infraestructure.Common.csproj">
+      <Project>{3413c010-f57f-4b05-9a95-980a16ea768e}</Project>
+      <Name>Infraestructure.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryContracts.Common\QueryContracts.Common.csproj">
+      <Project>{84360ac8-c346-43da-a960-724766203a1c}</Project>
+      <Name>QueryContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryHandlers.Common\QueryHandlers.Common.csproj">
+      <Project>{bf325ce3-b3e6-4e52-b41b-10774506adc2}</Project>
+      <Name>QueryHandlers.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

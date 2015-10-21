@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FECE0078-DACF-424A-9FE6-7D9780621587}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QueryContracts.Siport</RootNamespace>
+    <AssemblyName>QueryContracts.Siport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation, Version=3.1.0.0, Culture=neutral, PublicKeyToken=a82054b837897c66, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente\Parameter\ObtenerClienteParameter.cs" />
+    <Compile Include="Cliente\Result\ObtenerClienteResult.cs" />
+    <Compile Include="HojaRuta\Parameter\ListarOrdenServicioDisponibleParameter.cs" />
+    <Compile Include="HojaRuta\Parameter\ListarVehiculosDisponiblesParameter.cs" />
+    <Compile Include="HojaRuta\Result\ListarOrdenServicioDisponibleResult.cs" />
+    <Compile Include="HojaRuta\Result\ListarVehiculosDisponiblesResult.cs" />
+    <Compile Include="OrderServicio\Parameter\ListarHorarioEntregaParameter.cs" />
+    <Compile Include="OrderServicio\Parameter\ListarOrdenServicioParameter.cs" />
+    <Compile Include="OrderServicio\Parameter\ObtenerOrdenServicioDestinoParameter.cs" />
+    <Compile Include="OrderServicio\Parameter\ObtenerOrdenServicioParameter.cs" />
+    <Compile Include="OrderServicio\Result\ListarHorarioEntregaResult.cs" />
+    <Compile Include="OrderServicio\Result\ListarOrdenServicioResult.cs" />
+    <Compile Include="OrderServicio\Result\ObtenerOrdenServicioDestinoResult.cs" />
+    <Compile Include="OrderServicio\Result\ObtenerOrdenServicioResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ubigeo\Parameter\ListarUbigeoParameter.cs" />
+    <Compile Include="Ubigeo\Result\ListarUbigeoResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\Componentes.Common\Componentes.Common.csproj">
+      <Project>{617d1a0d-2e6a-4868-be96-afa6bdee07cc}</Project>
+      <Name>Componentes.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\QueryContracts.Common\QueryContracts.Common.csproj">
+      <Project>{84360ac8-c346-43da-a960-724766203a1c}</Project>
+      <Name>QueryContracts.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

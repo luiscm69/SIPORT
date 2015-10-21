@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CDC2671-F7ED-4A45-896B-3D0496E10832}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DistributedServices.Siport</RootNamespace>
+    <AssemblyName>DistributedServices.Siport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiportBackendService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\CommandContracts.Common\CommandContracts.Common.csproj">
+      <Project>{F36173D9-9783-472A-B943-4D306BA3CD9D}</Project>
+      <Name>CommandContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\CommandHandlers.Common\CommandHandlers.Common.csproj">
+      <Project>{151416F0-D3CE-48D6-ACCE-EB1EEBD5AD18}</Project>
+      <Name>CommandHandlers.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\DistributedServices.Common\DistributedServices.Common.csproj">
+      <Project>{0ca4fe62-519e-43c1-8add-d26f6d9a0165}</Project>
+      <Name>DistributedServices.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\QueryContracts.Common\QueryContracts.Common.csproj">
+      <Project>{84360AC8-C346-43DA-A960-724766203A1C}</Project>
+      <Name>QueryContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\QueryHandlers.Common\QueryHandlers.Common.csproj">
+      <Project>{BF325CE3-B3E6-4E52-B41B-10774506ADC2}</Project>
+      <Name>QueryHandlers.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandContracts.Siport\CommandContracts.Siport.csproj">
+      <Project>{aa3faf8a-b78c-48c5-ac97-738be2de84e6}</Project>
+      <Name>CommandContracts.Siport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandHandlers.Siport\CommandHandlers.Siport.csproj">
+      <Project>{7a86ced8-8813-49ea-92e9-843eb0aa6b65}</Project>
+      <Name>CommandHandlers.Siport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.Siport\Data.Siport.csproj">
+      <Project>{f2826f4c-059c-48d3-81cf-700f76d98d44}</Project>
+      <Name>Data.Siport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryContracts.Siport\QueryContracts.Siport.csproj">
+      <Project>{fece0078-dacf-424a-9fe6-7d9780621587}</Project>
+      <Name>QueryContracts.Siport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryHandlers.Siport\QueryHandlers.Siport.csproj">
+      <Project>{ac24239c-82f6-4984-a63d-43076c655c73}</Project>
+      <Name>QueryHandlers.Siport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

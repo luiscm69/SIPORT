@@ -1,0 +1,5 @@
+D:\UPC\PI2\Software\SIPORT\Src\common\WindowsService.Common\bin\Debug\WindowsService.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\WindowsService.Common\bin\Debug\WindowsService.Common.pdb
+D:\UPC\PI2\Software\SIPORT\Src\common\WindowsService.Common\obj\Debug\WindowsService.Common.csprojResolveAssemblyReference.cache
+D:\UPC\PI2\Software\SIPORT\Src\common\WindowsService.Common\obj\Debug\WindowsService.Common.dll
+D:\UPC\PI2\Software\SIPORT\Src\common\WindowsService.Common\obj\Debug\WindowsService.Common.pdb

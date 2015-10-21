@@ -1,0 +1,66 @@
+﻿body {
+    font-size: 1.2em; /*.85em;*/
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+
+.header 
+{
+    background-color: #F5F5F5;
+    color: #394557;
+    height: 32px;
+    font-size: 15px;
+    padding: 1px;
+    font-weight:bold;
+}
+
+.move-rigth{
+    display: block;
+    float: right;
+}
+
+button#btnagregardestino 
+{
+    margin-bottom:5px;
+}
+button#btnquitardestino 
+{
+    margin-right:36px;
+    margin-bottom:5px;
+}
+
+button#btnguardarordserv 
+{
+    margin-top: 15px;
+}
+button#btncancelarordserv 
+{
+    margin-right: 33px;
+    margin-top: 15px;
+}
+
+input#CodigoCliente {
+    /*width:100px!important;*/
+}
+
+#btncrearordenservicio {
+   
+    margin-bottom: 10px;
+}
+
+#btnplanificarruta {
+     margin-right: 33px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Common.Seguridad.Results" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common.Seguridad.Results" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50010/Siport?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
+  <xs:complexType name="ListarMenuResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarMenuDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarMenuResult" nillable="true" type="tns:ListarMenuResult" />
+  <xs:complexType name="ArrayOfListarMenuDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarMenuDto" nillable="true" type="tns:ListarMenuDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarMenuDto" nillable="true" type="tns:ArrayOfListarMenuDto" />
+  <xs:complexType name="ListarMenuDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdMenu" type="xs:double" />
+      <xs:element minOccurs="0" name="IdMenuPadre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="IdMenuPerfil" type="xs:double" />
+      <xs:element minOccurs="0" name="Nivel" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarMenuDto" nillable="true" type="tns:ListarMenuDto" />
+  <xs:complexType name="ObtenerDatosUsuarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaRegistro" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaVctoPwd" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IdUsuarioPwd" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Idusuario" type="xs:double" />
+          <xs:element minOccurs="0" name="IsApproved" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="IsLockedout" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="IsOnline" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="LastActivityDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastLockedOutDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastLoginDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Perfiles" nillable="true" type="tns:ArrayOfObtenerDatosPerfil" />
+          <xs:element minOccurs="0" name="RecordatorioPwd" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerDatosUsuarioResult" nillable="true" type="tns:ObtenerDatosUsuarioResult" />
+  <xs:complexType name="ArrayOfObtenerDatosPerfil">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ObtenerDatosPerfil" nillable="true" type="tns:ObtenerDatosPerfil" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfObtenerDatosPerfil" nillable="true" type="tns:ArrayOfObtenerDatosPerfil" />
+  <xs:complexType name="ObtenerDatosPerfil">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BdUsrPerfil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdPerfil" type="xs:double" />
+      <xs:element minOccurs="0" name="NombrePerfil" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ObtenerDatosPerfil" nillable="true" type="tns:ObtenerDatosPerfil" />
+  <xs:complexType name="ValidarCredencialesUsuarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Resultado" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidarCredencialesUsuarioResult" nillable="true" type="tns:ValidarCredencialesUsuarioResult" />
+</xs:schema>

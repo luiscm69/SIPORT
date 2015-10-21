@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="QueryParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServidorWeb" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QueryParameter" nillable="true" type="tns:QueryParameter" />
+  <xs:complexType name="ObtenerDatosConexionParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdPerfil" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerDatosConexionParameter" nillable="true" type="tns:ObtenerDatosConexionParameter" />
+  <xs:complexType name="QueryResult">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="QueryResult" nillable="true" type="tns:QueryResult" />
+  <xs:complexType name="ObtenerDatosConexionResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Clave" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdPerfil" type="xs:long" />
+          <xs:element minOccurs="0" name="NombrePerfil" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerDatosConexionResult" nillable="true" type="tns:ObtenerDatosConexionResult" />
+</xs:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommandContracts.Siport.HojaRuta" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommandContracts.Siport.HojaRuta" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50010/Siport?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
+  <xs:complexType name="InsertarPlanificacionCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q1:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoPlanificacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ComentarioPlanificacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdPlanHojadeRutaCab" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="ListaPlanHojaRuta" nillable="true" type="tns:ArrayOfInsertarPlanificacionDetCommand" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarPlanificacionCommand" nillable="true" type="tns:InsertarPlanificacionCommand" />
+  <xs:complexType name="ArrayOfInsertarPlanificacionDetCommand">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InsertarPlanificacionDetCommand" nillable="true" type="tns:InsertarPlanificacionDetCommand" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInsertarPlanificacionDetCommand" nillable="true" type="tns:ArrayOfInsertarPlanificacionDetCommand" />
+  <xs:complexType name="InsertarPlanificacionDetCommand">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdOrdenServicio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="IdOrdenServicioDestino" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="IdPlanHojadeRutaCab" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="IdPlanHojadeRutaDet" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="IdVehiculo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="OrdenAtencion" type="xs:int" />
+      <xs:element minOccurs="0" name="UsuarioCreacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InsertarPlanificacionDetCommand" nillable="true" type="tns:InsertarPlanificacionDetCommand" />
+</xs:schema>
